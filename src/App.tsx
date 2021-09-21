@@ -20,7 +20,7 @@ export function App() {
 
   const store = useStoreProvider()
 
-  const title = React.useMemo(() => {return selectedDay !== null ? formatDay(selectedDay) : 'Done App'}, [selectedDay])
+  const title = React.useMemo(() => {return selectedDay !== null ? formatDay(selectedDay) : 'Done App Made By Dave'}, [selectedDay])
   const handleBack = React.useCallback(() => { 
     selectDay(null)
     }, [selectDay])
